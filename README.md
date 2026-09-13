@@ -89,3 +89,7 @@ This is one part, with one configuration, and no FARGAN build on hardware. SCORE
 Apache 2.0, copyright Armstrong Subero, for the pipeline, vocoder, frontend and firmware.
 
 `fargan_source/` also carries upstream Opus Audio Codec files by Xiph.Org under the 3 clause BSD licence, unmodified, with their headers intact. FARGAN network and weights are copyright Amazon. The CH32H417 vendor headers and startup code are copyright Nanjing Qinheng Microelectronics.
+
+The preprint in the repo is not Apache 2.0. Copyright Armstrong Subero, all rights reserved. You may read it and cite it. You may not redistribute it, host a copy of it, or use it as training data.
+
+NOTE: "Opus" here in the paper and source means the audio codec, RFC 6716, not any language model. 
