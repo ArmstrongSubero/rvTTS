@@ -88,4 +88,4 @@ One part, one configuration, no FARGAN build on hardware. SCOREQ over three sent
 
 Apache 2.0, copyright Armstrong Subero, for the pipeline, vocoder, frontend and firmware.
 
-`fargan_source/` also carries upstream Opus files under the 3 clause BSD licence, unmodified, with their headers intact. FARGAN network and weights are copyright Amazon. The CH32H417 vendor headers and startup code are copyright Nanjing Qinheng Microelectronics.
+`fargan_source/` also carries upstream Opus Audio Codec files by Xiph.Org under the 3 clause BSD licence, unmodified, with their headers intact. FARGAN network and weights are copyright Amazon. The CH32H417 vendor headers and startup code are copyright Nanjing Qinheng Microelectronics.
