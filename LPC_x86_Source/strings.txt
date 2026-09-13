@@ -1,0 +1,134 @@
+System ready
+Booting
+Boot complete
+Initialising
+Initialisation failed
+Self test passed
+Self test failed
+Please wait
+Done
+Cancelled
+Operation complete
+Operation failed
+Press any key to continue
+Press and hold to confirm
+Select an option
+Confirm or cancel
+Invalid selection
+Not supported
+Access denied
+Are you sure
+Battery low
+Battery critical
+Battery at seventy percent
+Charging
+Charge complete
+Please connect the charger
+Power supply unstable
+Voltage out of range
+Supply voltage three point three volts
+Current draw two hundred milliamps
+Over current detected
+Short circuit detected
+Temperature is thirty seven degrees celsius
+Temperature warning
+Over temperature shutdown
+Sensor reading out of range
+Sensor not responding
+Sensor calibrated
+Calibration required
+Humidity is sixty percent
+Pressure is one thousand and thirteen millibars
+Clock frequency three hundred and fifty megahertz
+Clock not stable
+Crystal oscillator failed
+Reset by watchdog
+Reset by power on
+Hardware fault
+Memory test passed
+Memory test failed
+Out of memory
+Free memory is two hundred kilobytes
+Flash write failed
+Flash erase complete
+Storage full
+Card not detected
+Card removed
+Card inserted safely
+Please insert the card
+File not found
+File saved
+Save failed
+Loading
+Load complete
+Update available
+Update installed
+Update failed
+Downloading
+Download complete
+Upload complete
+Verifying
+Verification failed
+Checksum error
+Firmware version one point two
+Serial port open
+Serial port closed
+Baud rate one hundred and fifteen thousand two hundred
+Connected
+Disconnected
+Connection lost
+Connection timed out
+Reconnecting
+Network unavailable
+No network
+Signal strength good
+Signal weak
+Wireless enabled
+Wireless disabled
+Bluetooth pairing
+Pairing failed
+Device paired
+Device not found
+Unknown device
+Enter the code
+Code accepted
+Code rejected
+Wrong code
+Locked
+Unlocked
+Recording
+Recording stopped
+Playback started
+Volume up
+Volume down
+Muted
+Warning
+Error
+Critical error
+Fatal error
+Retrying
+Retry limit reached
+Aborting
+Shutting down
+Restarting
+Entering sleep mode
+Waking up
+Idle
+Busy
+Standby
+Rovari is booting
+Rovari OS version one
+Guvari is running
+Baochip detected
+Dabao board ready
+RISC five core online
+Two cores active
+Task started
+Task finished
+Task failed
+Queue full
+Buffer overflow
+Buffer empty
+Timeout
+Interrupt enabled
+Direct memory access ready

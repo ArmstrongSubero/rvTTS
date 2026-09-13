@@ -1,0 +1,1474 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+                              C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o (__riscv_save_12)
+C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+                              C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o (__libc_init_array)
+C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memset.o)
+                              C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o (memset)
+C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memcpy-asm.o)
+                              C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o (memcpy)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .group         0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.prosody_scratch_bytes
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.prosody_set_scratch
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.prosody_free
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_scratch_bytes
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_set_scratch
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_free
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_set_stage_buf
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_chunk_scratch_bytes
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.acoustic_stage2_window_frames
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.lpcvoc_init
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .text.SystemInit
+                0x00000000      0x1e0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_FFLAGS
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_FFLAGS
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_FRM
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_FRM
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_FCSR
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_FCSR
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MSTATUS
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MSTATUS
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MISA
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MISA
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MTVEC
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MTVEC
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MSCRATCH
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MSCRATCH
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MEPC
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MEPC
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MCAUSE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MCAUSE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MTVAL
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MTVAL
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MVENDORID
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MARCHID
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MIMPID
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MHARTID
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_SP
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MCOUNT_INHIBIT
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MCOUNT_INHIBIT
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MCYCLE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MCYCLE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_MINSTRET
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_MINSTRET
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_UCYCLE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_UCYCLE
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__set_UINSTRET
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text.__get_UINSTRET
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .sbss.WFE_MASK
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_info    0x00000000      0x61c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_abbrev  0x00000000      0x136 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_loclists
+                0x00000000       0xe8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_aranges
+                0x00000000      0x130 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_rnglists
+                0x00000000       0xdf C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_line    0x00000000      0x601 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_str     0x00000000      0x370 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_line_str
+                0x00000000      0x24b C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .debug_frame   0x00000000      0x240 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .riscv.attributes
+                0x00000000       0x73 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .text.Delay_Ms
+                0x00000000       0x46 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .text.USART_Printf_Init
+                0x00000000       0x9c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .text._write   0x00000000       0x4a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .text._sbrk    0x00000000       0x30 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .sdata.curbrk.0
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_DeInit
+                0x00000000      0x10e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_AFIODeInit
+                0x00000000       0x28 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_Init
+                0x00000000      0x10a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_StructInit
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_ReadInputDataBit
+                0x00000000        0xc C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_ReadInputData
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_ReadOutputDataBit
+                0x00000000        0xc C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_ReadOutputData
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_SetBits
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_ResetBits
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_WriteBit
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_Write
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_PinLockConfig
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_PinRemapConfig
+                0x00000000       0x7c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_PinAFConfig
+                0x00000000      0x22a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_EXTILineConfig
+                0x00000000       0x50 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text.GPIO_IPD_Unused
+                0x00000000      0x460 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_info    0x00000000      0xf11 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_abbrev  0x00000000      0x30d C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_loclists
+                0x00000000      0xde1 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_aranges
+                0x00000000       0xa0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_rnglists
+                0x00000000       0x8f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_line    0x00000000     0x1a0f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_str     0x00000000      0x629 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_line_str
+                0x00000000      0x299 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .debug_frame   0x00000000      0x16c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_DeInit
+                0x00000000       0x8a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HSEConfig
+                0x00000000       0x3e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_WaitForHSEStartUp
+                0x00000000       0x3e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_AdjustHSICalibrationValue
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HSICmd
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_PLLConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_PLLCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_SYSCLKConfig
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_GetSYSCLKSource
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HCLKSourceDivConfig
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_TIMClockSourDivConfig
+                0x00000000       0x5c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_LPTIMClockSourDivConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ITConfig
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ADCUSBHSPLLCLKAsSourceConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ADCHCLKCLKAsSourceConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_LSEConfig
+                0x00000000       0x2c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_LSICmd
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_RTCCLKConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_RTCCLKCmd
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_GetClocksFreq
+                0x00000000      0x1e0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HBPeriphClockCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HB2PeriphClockCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HB1PeriphClockCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HBPeriphResetCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HB2PeriphResetCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HB1PeriphResetCmd
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_BackupResetCmd
+                0x00000000       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ClockSecuritySystemCmd
+                0x00000000       0x3c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_MCOConfig
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_GetFlagStatus
+                0x00000000       0x3a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ClearFlag
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_GetITStatus
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ClearITPendingBit
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBHS_PLLCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBSS_PLLCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ETH_PLLCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_SERDES_PLLCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_PIPECmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_UTMIcmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_RGMIIcmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ETH125MCLKConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_HSADCCLKConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_I2S3CLKConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_I2S2CLKConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_RNGCLKConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBFSCLKConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBFS48ClockSourceDivConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_LTDCCLKConfig
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_LTDCClockSourceDivConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_UHSIFCLKConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_UHSIFClockSourceDivConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBHSPLLCLKConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBHSPLLReferConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBSSPLLReferConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_USBHSPLLClockSourceDivConfig
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_SERDESPLLMulConfig
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ADCCLKDutyCycleConfig
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_ADCCLKConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_SYSPLLGATEcmd
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_SYSPLLConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text.RCC_RTCOutputConfig
+                0x00000000       0x62 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .srodata.ADCPRETable
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .srodata.PPRE2Table
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .srodata.FPRETable
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .rodata.SERDESPLLMULTable
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .rodata.HBPrescTable
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .rodata.PLLMULTable
+                0x00000000       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_info    0x00000000     0x17c3 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_abbrev  0x00000000      0x45e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_loclists
+                0x00000000      0xa9d C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_aranges
+                0x00000000      0x200 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_rnglists
+                0x00000000      0x1b9 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_line    0x00000000     0x1b4c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_str     0x00000000      0xeb7 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_line_str
+                0x00000000      0x286 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .debug_frame   0x00000000      0x404 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_DeInit
+                0x00000000      0x1fa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_TimeBaseInit
+                0x00000000       0xc8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC1Init
+                0x00000000       0xae C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC2Init
+                0x00000000       0xc4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC3Init
+                0x00000000       0xc8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC4Init
+                0x00000000       0x9c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ICInit
+                0x00000000      0x192 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_PWMIConfig
+                0x00000000      0x182 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_BDTRConfig
+                0x00000000       0x2e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_TimeBaseStructInit
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OCStructInit
+                0x00000000       0x22 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ICStructInit
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_BDTRStructInit
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_Cmd  0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_CtrlPWMOutputs
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ITConfig
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GenerateEvent
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_DMAConfig
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_DMACmd
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_InternalClockConfig
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ITRxExternalClockConfig
+                0x00000000       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_TIxExternalClockConfig
+                0x00000000       0x98 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ETRClockMode1Config
+                0x00000000       0x2a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ETRClockMode2Config
+                0x00000000       0x22 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ETRConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_PrescalerConfig
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_CounterModeConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectInputTrigger
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_EncoderInterfaceConfig
+                0x00000000       0x44 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ForcedOC1Config
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ForcedOC2Config
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ForcedOC3Config
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ForcedOC4Config
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ARRPreloadConfig
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectCOM
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectCCDMA
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_CCPreloadControl
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC1PreloadConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC2PreloadConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC3PreloadConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC4PreloadConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC1FastConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC2FastConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC3FastConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC4FastConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ClearOC1Ref
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ClearOC2Ref
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ClearOC3Ref
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ClearOC4Ref
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC1PolarityConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC1NPolarityConfig
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC2PolarityConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC2NPolarityConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC3PolarityConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC3NPolarityConfig
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_OC4PolarityConfig
+                0x00000000       0x14 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_CCxCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_CCxNCmd
+                0x00000000       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectOCxM
+                0x00000000       0x54 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_UpdateDisableConfig
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_UpdateRequestConfig
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectHallSensor
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectOnePulseMode
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectOutputTrigger
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectSlaveMode
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SelectMasterSlaveMode
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetCounter
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetAutoreload
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetCompare1
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetCompare2
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetCompare3
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetCompare4
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetIC1Prescaler
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetIC2Prescaler
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetIC3Prescaler
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetIC4Prescaler
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_SetClockDivision
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetCapture1
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetCapture2
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetCapture3
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetCapture4
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetCounter
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetPrescaler
+                0x00000000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_GetFlagStatus
+                0x00000000        0xc C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ClearFlag
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_TimeBaseInit
+                0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_TimeBaseStructInit
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_OC1Init
+                0x00000000       0x50 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_OC2Init
+                0x00000000       0x56 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_OC3Init
+                0x00000000       0x56 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_OC4Init
+                0x00000000       0x54 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_OCStructInit
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetCounter
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetAutoreload
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetCompare1
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetCompare2
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetCompare3
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_SetCompare4
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_GetCapture1
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_GetCapture2
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_GetCapture3
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_GetCapture4
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM9_12_GetCounter
+                0x00000000        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_IC2BothEdge_Cmd
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_IC3BothEdge_Cmd
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_IC4BothEdge_Cmd
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_BrakeSourceConfig
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_AsymmetricDeadTimeConfig
+                0x00000000       0x1c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_ICBothEdgeLevelIndication_Cmd
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text.TIM_IC_OverflowMode_Config
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_BOOT_GetMode
+                0x00000000       0x3c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Unlock
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Lock
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetUserOptionByte
+                0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetWriteProtectionOptionByte
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetReadOutProtectionStatus
+                0x00000000        0xc C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ITConfig
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetFlagStatus
+                0x00000000       0x3a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ClearFlag
+                0x00000000        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetStatus
+                0x00000000       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_WaitForLastOperation
+                0x00000000       0x3c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ErasePage
+                0x00000000       0x86 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_EraseOptionBytes
+                0x00000000      0x10e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ProgramWord
+                0x00000000       0x8a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ProgramHalfWord
+                0x00000000       0x54 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ProgramOptionByteData
+                0x00000000      0x128 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_EnableWriteProtection
+                0x00000000      0x134 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ReadOutProtection
+                0x00000000      0x11a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_UserOptionByteConfig
+                0x00000000      0x128 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Unlock_Fast
+                0x00000000       0x1e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Lock_Fast
+                0x00000000        0xe C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_EraseBlock_Fast
+                0x00000000       0x48 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ProgramPage_Fast
+                0x00000000       0x64 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Enhance_Mode
+                0x00000000       0x28 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_Access_Clock_Cfg
+                0x00000000       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_LP_Cmd
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.SystemReset_StartMode
+                0x00000000       0x40 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ROM_ERASE
+                0x00000000      0x2f0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_ROM_WRITE
+                0x00000000      0x10a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text.FLASH_GetCapacity
+                0x00000000        0xc C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_info    0x00000000      0xea5 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_abbrev  0x00000000      0x41f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_loclists
+                0x00000000      0xb03 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_aranges
+                0x00000000      0x108 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_rnglists
+                0x00000000      0x109 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_line    0x00000000     0x26da C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_str     0x00000000      0x6e4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_line_str
+                0x00000000      0x27c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .debug_frame   0x00000000      0x304 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .text.pin_mode
+                0x00000000      0x160 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .rodata.pin_mode
+                0x00000000       0x40 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .text.digital_write
+                0x00000000       0x60 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .text.digital_read
+                0x00000000       0x38 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .text.pin_toggle
+                0x00000000       0x5e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .sbss._port_clocks_enabled
+                0x00000000        0x1 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .rodata.rcc_table
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .rodata.port_table
+                0x00000000       0x18 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_info    0x00000000      0x680 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_abbrev  0x00000000      0x289 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_loclists
+                0x00000000      0x5f3 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_aranges
+                0x00000000       0x38 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_rnglists
+                0x00000000       0xa3 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_line    0x00000000      0x6f2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_str     0x00000000      0x467 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_line_str
+                0x00000000      0x2fa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .debug_frame   0x00000000       0x94 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .text.rovari_tick_init
+                0x00000000       0x9e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .text.millis   0x00000000        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .text.micros   0x00000000       0x3a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .text.touch_set_rotation
+                0x00000000        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_info    0x00000000       0xad C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_abbrev  0x00000000       0x63 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_aranges
+                0x00000000       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_rnglists
+                0x00000000       0x13 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_line    0x00000000       0x6d C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_str     0x00000000      0x1aa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_line_str
+                0x00000000      0x24f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .debug_frame   0x00000000       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .text.sevs_target_disable_irq
+                0x00000000        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .text.sevs_target_uart_write_str
+                0x00000000        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .text.sevs_target_halt
+                0x00000000        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .rodata.sevs_assert_fail.str1.4
+                0x00000000       0x16 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .text.sevs_assert_fail
+                0x00000000      0x3ae C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .text.sevs_target_pop_crash_record
+                0x00000000       0x52 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .rodata.str1.4
+                0x00000000       0x28 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .rodata.CSWTCH.27
+                0x00000000       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_info    0x00000000      0x5ba C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_abbrev  0x00000000      0x263 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_loclists
+                0x00000000      0x5f3 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_aranges
+                0x00000000       0x40 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_rnglists
+                0x00000000       0x92 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_line    0x00000000      0xb6e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_str     0x00000000      0x2c2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_line_str
+                0x00000000      0x2f3 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .comment       0x00000000       0x34 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .debug_frame   0x00000000       0x84 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+ .eh_frame      0x00000000       0xf8 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+ .text          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memset.o)
+ .data          0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memcpy-asm.o)
+ .bss           0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memcpy-asm.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00040000         0x00020000         xr
+RAM_CODE         0x200a0000         0x00020000         xrw
+RAM              0x200c0300         0x0003fd00         xrw
+RAM_LOAD         0x200c0200         0x00000100         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_core_riscv_7dbc2d40.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_gpio_2abf4fc3.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_rcc_eb5498b3.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_flash_b574222d.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_gpio_5223812d.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_touch_c1856630.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_sevs_assert_target_aebddc0e.o
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libstdc++_nano.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libm_nano.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a
+START GROUP
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libnosys.a
+END GROUP
+START GROUP
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a
+LOAD C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libnosys.a
+END GROUP
+                0x00000800                        __stack_size = 0x800
+                [!provide]                        PROVIDE (_stack_size = __stack_size)
+
+.init           0x00040000        0x8
+                0x00040000                        _sinit = .
+                0x00040000                        . = ALIGN (0x4)
+ *(SORT_NONE(.init))
+ .init          0x00040000        0x6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                0x00040000                _start
+                0x00040008                        . = ALIGN (0x4)
+ *fill*         0x00040006        0x2 
+                0x00040008                        _einit = .
+
+.loadcodelalign
+                0x00040008        0x0
+                0x00040008                        . = ALIGN (0x4)
+                0x00040008                        PROVIDE (_loadcode_lma = .)
+
+.loadcode       0x200c0200       0xe4 load address 0x00040008
+                0x200c0200                        . = ALIGN (0x4)
+                0x200c0200                        PROVIDE (_loadcode_vma_start = .)
+ *(.load)
+ .load          0x200c0200       0xe4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                0x200c02e4                        . = ALIGN (0x4)
+                0x200c02e4                        PROVIDE (_loadcode_vma_end = .)
+
+.highcodelalign
+                0x000400ec        0x0
+                0x000400ec                        . = ALIGN (0x4)
+                0x000400ec                        PROVIDE (_highcode_lma = .)
+
+.highcode       0x200a0000     0x6c74 load address 0x000400ec
+                0x200a0000                        . = ALIGN (0x4)
+                0x200a0000                        PROVIDE (_highcode_vma_start = .)
+ *(.vector)
+ .vector        0x200a0000      0x254 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ *(SORT_NONE(.vector_handler))
+ *(.text)
+ .text          0x200a0254       0x68 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+                0x200a0254                __riscv_save_12
+                0x200a025c                __riscv_save_9
+                0x200a025c                __riscv_save_11
+                0x200a025c                __riscv_save_10
+                0x200a025c                __riscv_save_8
+                0x200a026c                __riscv_save_4
+                0x200a026c                __riscv_save_6
+                0x200a026c                __riscv_save_5
+                0x200a026c                __riscv_save_7
+                0x200a0288                __riscv_save_3
+                0x200a0288                __riscv_save_2
+                0x200a0288                __riscv_save_1
+                0x200a0288                __riscv_save_0
+                0x200a0294                __riscv_restore_12
+                0x200a0298                __riscv_restore_11
+                0x200a0298                __riscv_restore_9
+                0x200a0298                __riscv_restore_10
+                0x200a0298                __riscv_restore_8
+                0x200a02a4                __riscv_restore_5
+                0x200a02a4                __riscv_restore_7
+                0x200a02a4                __riscv_restore_6
+                0x200a02a4                __riscv_restore_4
+                0x200a02b0                __riscv_restore_3
+                0x200a02b0                __riscv_restore_0
+                0x200a02b0                __riscv_restore_2
+                0x200a02b0                __riscv_restore_1
+ .text          0x200a02bc       0x10 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memset.o)
+                0x200a02bc                memset
+ .text          0x200a02cc       0x16 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memcpy-asm.o)
+                0x200a02cc                memcpy
+ *(.text.*)
+ .text.as2_dot_i8.constprop.0
+                0x200a02e2       0x7e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.as2_quant.constprop.0
+                0x200a0360       0xb2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.as2_stage_tap.constprop.0
+                0x200a0412       0x4c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.pw_is_voiced
+                0x200a045e       0x78 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.pw_gru_step_i8.constprop.0
+                0x200a04d6      0x2ce C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.prosody_load_mem
+                0x200a07a4      0x1ce C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a07a4                prosody_load_mem
+ .text.prosody_generate
+                0x200a0972      0xe0c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a0972                prosody_generate
+ .text.acoustic_stage2_load_mem
+                0x200a177e      0x1ae C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a177e                acoustic_stage2_load_mem
+ .text.acoustic_stage2_generate
+                0x200a192c      0xcee C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a192c                acoustic_stage2_generate
+ .text.acoustic_stage2_generate_chunked
+                0x200a261a      0x126 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a261a                acoustic_stage2_generate_chunked
+ .text.lpcvoc_reset
+                0x200a2740       0xb6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a2740                lpcvoc_reset
+ .text.lpcvoc_frame
+                0x200a27f6      0xb30 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a27f6                lpcvoc_frame
+ .text.memmove  0x200a3326       0x36 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a3326                memmove
+ .text.app_init
+                0x200a335c       0x32 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a335c                app_init
+ .text.app_run  0x200a338e      0x42c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a338e                app_run
+ .text.startup._GLOBAL__sub_I_prosody_load_mem
+                0x200a37ba       0x2c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .text.vector_handler
+                0x200a37e6        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                0x200a37e6                TIM8_TRG_COM_IRQHandler
+                0x200a37e6                TIM8_CC_IRQHandler
+                0x200a37e6                USART_WKUP_IRQHandler
+                0x200a37e6                SPI4_IRQHandler
+                0x200a37e6                DFSDM0_IRQHandler
+                0x200a37e6                TIM1_CC_IRQHandler
+                0x200a37e6                HardFault_Handler
+                0x200a37e6                TIM10_IRQHandler
+                0x200a37e6                IPC_CH2_Handler
+                0x200a37e6                USBPD_IRQHandler
+                0x200a37e6                TIM6_IRQHandler
+                0x200a37e6                CAN3_RX1_IRQHandler
+                0x200a37e6                I3C_ER_IRQHandler
+                0x200a37e6                SDIO_IRQHandler
+                0x200a37e6                DMA2_Channel8_IRQHandler
+                0x200a37e6                NMI_Handler
+                0x200a37e6                CAN2_RX1_IRQHandler
+                0x200a37e6                HSEM_Handler
+                0x200a37e6                USBHS_IRQHandler
+                0x200a37e6                LPTIM2_IRQHandler
+                0x200a37e6                USBFSWakeup_IRQHandler
+                0x200a37e6                I2C3_ER_IRQHandler
+                0x200a37e6                USBFS_IRQHandler
+                0x200a37e6                USART8_IRQHandler
+                0x200a37e6                I2C2_EV_IRQHandler
+                0x200a37e6                CAN1_RX0_IRQHandler
+                0x200a37e6                CAN3_SCE_IRQHandler
+                0x200a37e6                CAN2_SCE_IRQHandler
+                0x200a37e6                ADC1_2_IRQHandler
+                0x200a37e6                Break_Point_Handler
+                0x200a37e6                IPC_CH0_Handler
+                0x200a37e6                SPI1_IRQHandler
+                0x200a37e6                USART5_IRQHandler
+                0x200a37e6                SysTick0_Handler
+                0x200a37e6                EXTI7_0_IRQHandler
+                0x200a37e6                CAN2_RX0_IRQHandler
+                0x200a37e6                TIM8_UP_IRQHandler
+                0x200a37e6                Ecall_M_Mode_Handler
+                0x200a37e6                ECDC_IRQHandler
+                0x200a37e6                SDMMC_IRQHandler
+                0x200a37e6                USART7_IRQHandler
+                0x200a37e6                DMA2_Channel2_IRQHandler
+                0x200a37e6                DMA1_Channel4_IRQHandler
+                0x200a37e6                USART6_IRQHandler
+                0x200a37e6                CAN3_RX0_IRQHandler
+                0x200a37e6                HSADC_IRQHandler
+                0x200a37e6                USART3_IRQHandler
+                0x200a37e6                RTC_IRQHandler
+                0x200a37e6                DMA1_Channel7_IRQHandler
+                0x200a37e6                CAN1_RX1_IRQHandler
+                0x200a37e6                DVP_IRQHandler
+                0x200a37e6                USBSS_IRQHandler
+                0x200a37e6                SWPMI_IRQHandler
+                0x200a37e6                USBPDWakeUp_IRQHandler
+                0x200a37e6                EXTI15_8_IRQHandler
+                0x200a37e6                TIM4_IRQHandler
+                0x200a37e6                DMA2_Channel1_IRQHandler
+                0x200a37e6                SWPMI_WKUP_IRQHandler
+                0x200a37e6                I2C1_EV_IRQHandler
+                0x200a37e6                USBSSWakeup_IRQHandler
+                0x200a37e6                USART4_IRQHandler
+                0x200a37e6                DMA1_Channel6_IRQHandler
+                0x200a37e6                DMA2_Channel4_IRQHandler
+                0x200a37e6                TIM3_IRQHandler
+                0x200a37e6                RCC_IRQHandler
+                0x200a37e6                TIM1_TRG_COM_IRQHandler
+                0x200a37e6                DMA1_Channel1_IRQHandler
+                0x200a37e6                DMA2_Channel7_IRQHandler
+                0x200a37e6                QSPI1_IRQHandler
+                0x200a37e6                DMA1_Channel8_IRQHandler
+                0x200a37e6                IPC_CH3_Handler
+                0x200a37e6                I3C_EV_IRQHandler
+                0x200a37e6                I3C_WKUP_IRQHandler
+                0x200a37e6                TIM12_IRQHandler
+                0x200a37e6                CAN2_TX_IRQHandler
+                0x200a37e6                TIM5_IRQHandler
+                0x200a37e6                I2C3_EV_IRQHandler
+                0x200a37e6                PIOC_IRQHandler
+                0x200a37e6                TIM9_IRQHandler
+                0x200a37e6                LTDC_IRQHandler
+                0x200a37e6                SAI_IRQHandler
+                0x200a37e6                ETH_WKUP_IRQHandler
+                0x200a37e6                SPI2_IRQHandler
+                0x200a37e6                IPC_CH1_Handler
+                0x200a37e6                LPTIM1_WKUP_IRQHandler
+                0x200a37e6                CAN1_TX_IRQHandler
+                0x200a37e6                DMA2_Channel5_IRQHandler
+                0x200a37e6                DMA1_Channel5_IRQHandler
+                0x200a37e6                QSPI2_IRQHandler
+                0x200a37e6                RNG_IRQHandler
+                0x200a37e6                DMA1_Channel3_IRQHandler
+                0x200a37e6                ETH_IRQHandler
+                0x200a37e6                TIM1_UP_IRQHandler
+                0x200a37e6                WWDG_IRQHandler
+                0x200a37e6                USBHSWakeup_IRQHandler
+                0x200a37e6                Ecall_U_Mode_Handler
+                0x200a37e6                I2C4_EV_IRQHandler
+                0x200a37e6                CAN3_TX_IRQHandler
+                0x200a37e6                DMA2_Channel6_IRQHandler
+                0x200a37e6                TIM2_IRQHandler
+                0x200a37e6                SW_Handler
+                0x200a37e6                TIM1_BRK_IRQHandler
+                0x200a37e6                GPHA_IRQHandler
+                0x200a37e6                LPTIM2_WKUP_IRQHandler
+                0x200a37e6                RTCAlarm_IRQHandler
+                0x200a37e6                TIM11_IRQHandler
+                0x200a37e6                USART2_IRQHandler
+                0x200a37e6                UHSIF_IRQHandler
+                0x200a37e6                I2C2_ER_IRQHandler
+                0x200a37e6                DMA1_Channel2_IRQHandler
+                0x200a37e6                TIM8_BRK_IRQHandler
+                0x200a37e6                CAN1_SCE_IRQHandler
+                0x200a37e6                FLASH_IRQHandler
+                0x200a37e6                USART1_IRQHandler
+                0x200a37e6                SPI3_IRQHandler
+                0x200a37e6                I2C1_ER_IRQHandler
+                0x200a37e6                FMC_IRQHandler
+                0x200a37e6                SysTick1_Handler
+                0x200a37e6                LPTIM1_IRQHandler
+                0x200a37e6                DFSDM1_IRQHandler
+                0x200a37e6                I2C4_ER_IRQHandler
+                0x200a37e6                SERDES_IRQHandler
+                0x200a37e6                USBSS_LINK_IRQHandler
+                0x200a37e6                DMA2_Channel3_IRQHandler
+ .text.SystemAndCoreClockUpdate
+                0x200a37e8      0x188 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                0x200a37e8                SystemAndCoreClockUpdate
+ .text.Delay_Init
+                0x200a3970       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+                0x200a3970                Delay_Init
+ .text.Delay_Us
+                0x200a3994       0x42 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+                0x200a3994                Delay_Us
+ .text.TIM_GetITStatus
+                0x200a39d6       0x1a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+                0x200a39d6                TIM_GetITStatus
+ .text.TIM_ClearITPendingBit
+                0x200a39f0        0xa C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+                0x200a39f0                TIM_ClearITPendingBit
+ .text.startup.main
+                0x200a39fa       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+                0x200a39fa                main
+ .text.TIM7_IRQHandler
+                0x200a3a0c       0xca C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+                0x200a3a0c                TIM7_IRQHandler
+ .text.__libc_init_array
+                0x200a3ad6       0x5e C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+                0x200a3ad6                __libc_init_array
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZL11lpcvoc_disp
+                0x200a3b34       0xc4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rodata._ZL10lpcvoc_cos
+                0x200a3bf8     0x2ac4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rodata._ZL11lpcvoc_band
+                0x200a66bc       0x24 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rodata._ZL10lpcvoc_dct
+                0x200a66e0      0x510 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rodata._ZZ24acoustic_stage2_generateE2pi
+                0x200a6bf0       0x44 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rodata.SERDESPLLMULTB
+                0x200a6c34       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .rodata.HBPrescTB
+                0x200a6c44       0x10 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .rodata.PLLMULTB
+                0x200a6c54       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ *(.sdata2.*)
+ *(.glue_7)
+ *(.glue_7t)
+ *(.gnu.linkonce.t.*)
+                0x200a6c74                        . = ALIGN (0x4)
+                0x200a6c74                        PROVIDE (_highcode_vma_end = .)
+
+.text           0x00046d60       0x54
+                0x00046d60                        . = ALIGN (0x4)
+ *(SORT_NONE(.handle_reset))
+ .handle_reset  0x00046d60       0x52 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                0x00046d60                handle_reset
+                0x00046db4                        . = ALIGN (0x4)
+ *fill*         0x00046db2        0x2 
+
+.rela.dyn       0x00046db4        0x0
+ .rela.text.startup._GLOBAL__sub_I_prosody_load_mem
+                0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rela.init     0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rela.vector   0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rela.load     0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rela.handle_reset
+                0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .rela.text.__libc_init_array
+                0x00046db4        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+
+.highcodelalign1
+                0x00046db4        0x0
+                0x00046db4                        . = ALIGN (0x4)
+                0x00046db4                        PROVIDE (_highcode_lma1 = .)
+
+.fini           0x200a6c74        0x0 load address 0x00046db4
+                0x200a6c74                        . = ALIGN (0x4)
+                0x200a6c74                        PROVIDE (_highcode_vma_start1 = .)
+ *(SORT_NONE(.fini))
+                0x200a6c74                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (_eitcm = .)
+
+.preinit_array  0x200a6c74        0x0 load address 0x00046db4
+                0x200a6c74                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x200a6c74                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x200a6c74        0x4 load address 0x00046db4
+                0x200a6c74                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x200a6c74        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200a6c78                        PROVIDE (__init_array_end = .)
+
+.fini_array     0x200a6c78        0x0 load address 0x00046db8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors          0x200a6c78        0x0 load address 0x00046db8
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+                0x200a6c78                        . = ALIGN (0x4)
+                0x200a6c78                        PROVIDE (_highcode_vma_end1 = .)
+
+.dalign         0x200c0300        0x0 load address 0x00046db8
+                0x200c0300                        . = ALIGN (0x4)
+                0x200c0300                        PROVIDE (_data_vma = .)
+
+.dlalign        0x00046db8        0x0
+                0x00046db8                        . = ALIGN (0x4)
+                0x00046db8                        PROVIDE (_data_lma = .)
+
+.data           0x200c0300      0x1a0 load address 0x00046db8
+                0x200c0300                        . = ALIGN (0x4)
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ *(.gnu.linkonce.d.*)
+                0x200c0300                        . = ALIGN (0x8)
+                0x200c0b00                        PROVIDE (__global_pointer$ = (. + 0x800))
+ *(.sdata .sdata.*)
+ .sdata._ZL12pw_rng_state
+                0x200c0300        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sdata.SystemCoreClock
+                0x200c0304        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                0x200c0304                SystemCoreClock
+ .sdata.SystemClock
+                0x200c0308        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                0x200c0308                SystemClock
+ *(.sdata2.*)
+ *(.gnu.linkonce.s.*)
+                0x200c0310                        . = ALIGN (0x8)
+ *fill*         0x200c030c        0x4 
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ .srodata.cst4  0x200c0310      0x18c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+ .srodata.FPRETB
+                0x200c049c        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                0x200c04a0                        . = ALIGN (0x4)
+                0x200c04a0                        PROVIDE (_edata = .)
+
+.bss            0x200c04a0    0x3d5c4 load address 0x00046f58
+                0x200c04a0                        . = ALIGN (0x4)
+                0x200c04a0                        PROVIDE (_sbss = .)
+ *(.sbss*)
+ .sbss._ZGV6serial
+                0x200c04a0        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200c04a0                guard variable for serial
+ .sbss._ZZ7app_runE5bound
+                0x200c04a8        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL17g_as2_stage_bytes
+                0x200c04ac        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL11g_as2_stage
+                0x200c04b0        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL19g_as2_scratch_bytes
+                0x200c04b4        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL13g_as2_scratch
+                0x200c04b8        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL18g_pw_scratch_bytes
+                0x200c04bc        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss._ZL12g_pw_scratch
+                0x200c04c0        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .sbss.serial   0x200c04c4        0x8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                0x200c04c4                serial
+ .sbss.HCLKClock
+                0x200c04cc        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                0x200c04cc                HCLKClock
+ .sbss.p_ms     0x200c04d0        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .sbss.p_us     0x200c04d4        0x2 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ *fill*         0x200c04d6        0x2 
+ .sbss.ms_counter
+                0x200c04d8        0x4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ *(.gnu.linkonce.sb.*)
+ *(.bss*)
+ .bss._ZZL5synthvE2vo
+                0x200c04dc      0x3e8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZZL5synthvE2pi
+                0x200c08c4      0x3e8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZZL5synthvE2en
+                0x200c0cac      0x3e8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ *fill*         0x200c1094        0x4 
+ .bss._ZL7win_out
+                0x200c1098     0x3700 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL6win_vo
+                0x200c4798      0x2c0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL6win_pi
+                0x200c4a58      0x2c0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL6win_en
+                0x200c4d18      0x2c0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL6win_st
+                0x200c4fd8       0xb0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL6win_ph
+                0x200c5088       0xb0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL14acoustic_arena
+                0x200c5138    0x38000 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL3voc   0x200fd138      0x758 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL2am    0x200fd890       0x8c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL2pm    0x200fd91c       0x9c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .bss._ZL7g_as2_q
+                0x200fd9b8       0xa9 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ *(.gnu.linkonce.b.*)
+ *(COMMON*)
+                0x200fda64                        . = ALIGN (0x4)
+ *fill*         0x200fda61        0x3 
+                0x200fda64                        PROVIDE (_ebss = .)
+                0x200fda64                        PROVIDE (_end = _ebss)
+                [!provide]                        PROVIDE (end = .)
+
+.stack          0x200ff800      0x800
+                0x200ff800                        PROVIDE (_heap_end = .)
+                0x200ff800                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (_susrstack = .)
+                0x20100000                        . = (. + __stack_size)
+ *fill*         0x200ff800      0x800 
+                0x20100000                        PROVIDE (_eusrstack = .)
+                0x00000001                        ASSERT (((LOADADDR (.data) + SIZEOF (.data)) <= 0x50000), V5F image passed 64K and now overlaps the word vocab blob at 0x00050000)
+OUTPUT(system\build\app_v5f.elf elf32-littleriscv)
+
+.debug_info     0x00000000     0xb519
+ .debug_info    0x00000000     0x6857 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_info    0x00006857       0x23 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .debug_info    0x0000687a      0x765 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_info    0x00006fdf      0x730 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_info    0x0000770f     0x2e6b C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_info    0x0000a57a       0xcf C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_info    0x0000a649      0xd71 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .debug_info    0x0000b3ba      0x15f C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+
+.debug_abbrev   0x00000000     0x13d1
+ .debug_abbrev  0x00000000      0x86e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_abbrev  0x0000086e       0x12 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .debug_abbrev  0x00000880      0x254 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_abbrev  0x00000ad4      0x246 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_abbrev  0x00000d1a      0x35a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_abbrev  0x00001074       0x61 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_abbrev  0x000010d5      0x2d4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .debug_abbrev  0x000013a9       0x28 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+
+.debug_loclists
+                0x00000000     0x75bd
+ .debug_loclists
+                0x00000000     0x58cf C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_loclists
+                0x000058cf      0x1f4 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_loclists
+                0x00005ac3       0xb6 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_loclists
+                0x00005b79     0x19ef C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_loclists
+                0x00007568       0x55 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+
+.debug_aranges  0x00000000      0x5a0
+ .debug_aranges
+                0x00000000       0xe8 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_aranges
+                0x000000e8       0x38 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .debug_aranges
+                0x00000120       0x28 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_aranges
+                0x00000148       0x48 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_aranges
+                0x00000190      0x398 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_aranges
+                0x00000528       0x20 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_aranges
+                0x00000548       0x38 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .debug_aranges
+                0x00000580       0x20 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+
+.debug_rnglists
+                0x00000000     0x156c
+ .debug_rnglists
+                0x00000000     0x117a C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_rnglists
+                0x0000117a       0x26 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .debug_rnglists
+                0x000011a0       0x35 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_rnglists
+                0x000011d5       0x32 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_rnglists
+                0x00001207      0x31f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_rnglists
+                0x00001526       0x13 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_rnglists
+                0x00001539       0x33 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+
+.debug_line     0x00000000     0xd7eb
+ .debug_line    0x00000000     0x8a5c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_line    0x00008a5c      0x1fd C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .debug_line    0x00008c59      0x84f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_line    0x000094a8      0x493 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_line    0x0000993b     0x3a4b C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_line    0x0000d386       0x88 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_line    0x0000d40e      0x27e C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .debug_line    0x0000d68c      0x15f C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+
+.debug_str      0x00000000     0x3442
+ .debug_str     0x00000000     0x3442 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                               0x15f0 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                                 0xd1 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                                0x473 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+                                0x563 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+                               0x1114 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+                                0x1b5 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+                                0xc30 (size before relaxing)
+ .debug_str     0x00003442        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+                                0x36b (size before relaxing)
+
+.debug_line_str
+                0x00000000      0xbb7
+ .debug_line_str
+                0x00000000      0xbb7 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                                0x712 (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+                                 0xc5 (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                                0x28f (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+                                0x324 (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+                                0x285 (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+                                0x1ce (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+                                0x2eb (size before relaxing)
+ .debug_line_str
+                0x00000bb7        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+                                0x1ac (size before relaxing)
+
+.comment        0x00000000       0x33
+ .comment       0x00000000       0x33 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+                                 0x34 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .note.GNU-stack
+                0x00000000        0x0 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+
+.riscv.attributes
+                0x00000000       0x73
+ .riscv.attributes
+                0x00000000       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .riscv.attributes
+                0x0000006f       0x71 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_startup_v5f_2414b4f1.o
+ .riscv.attributes
+                0x000000e0       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .riscv.attributes
+                0x0000014f       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .riscv.attributes
+                0x000001be       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .riscv.attributes
+                0x0000022d       0x6f C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .riscv.attributes
+                0x0000029c       0x73 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o
+ .riscv.attributes
+                0x0000030f       0x61 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libgcc.a(save-restore.o)
+ .riscv.attributes
+                0x00000370       0x63 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-init.o)
+ .riscv.attributes
+                0x000003d3       0x61 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memset.o)
+ .riscv.attributes
+                0x00000434       0x61 C:/Users/armstrongsubero/Desktop/Products/02_Rovari_Studio/Rovari_System_Studio/toolchain/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32imafc_zicsr_zaamo_zalrsc/ilp32f\libc_nano.a(libc_a-memcpy-asm.o)
+
+.debug_frame    0x00000000      0xd90
+ .debug_frame   0x00000000      0x43c C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_app_v5f_5ad3d26d.o
+ .debug_frame   0x0000043c       0x50 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_system_ch32h417_d84b448b.o
+ .debug_frame   0x0000048c       0x98 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_debug_fb75bc4f.o
+ .debug_frame   0x00000524      0x730 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_ch32h417_tim_616135bf.o
+ .debug_frame   0x00000c54       0x28 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_main_v5f_4a96b7f0.o
+ .debug_frame   0x00000c7c      0x114 C:/Users/armstrongsubero/Desktop/Products/Rovari_Code_Examples/CH32_SPEECH/TTS_DEMO_DUO/system/build/v5f_rovari_tick_e930fe48.o

@@ -1,0 +1,17 @@
+{
+  "peripherals": [
+    "GPIO",
+    "RCC",
+    "UART",
+    "SPI",
+    "DAC",
+    "TIM",
+    "DMA",
+    "PWR",
+    "CRC"
+  ],
+  "libraries": [
+    "Dual Core (V5F)",
+    "SD Card (SPI)"
+  ]
+}

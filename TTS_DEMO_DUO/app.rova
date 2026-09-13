@@ -1,0 +1,474 @@
+/*
+ * Copyright (c) 2026 Armstrong Subero
+ *
+ * Program:  H417_TTS_DEMO (dual core)
+ * Platform: CH32H417 / Rovari SDK
+ * Core:     V3F, 144 MHz
+ *
+ * I/O core: card, dictionary, frontend, word ids, buffers, playback.
+ * All inference is on the V5F. Flash is provisioned before TTS_CMD_INIT.
+ *
+ * Memory, of the 411 KB the V3F linker gives us:
+ *   prosody arena 191 KB
+ *   dict index     88 KB
+ *   pcm            78 KB
+ *   feat           20 KB
+ *   frontend       17 KB
+ *
+ * Hardware:
+ *   console  SERIAL1, TX PA9, RX PA10, 115200 8N1
+ *   audio    DAC channel 1 on PA4, through 1k to the amp, 22n to GND
+ *   clock    TIMER1 at 16 kHz, TIMER7 belongs to rovari_tick
+ *   card     SPI2, PA12 SCK, PC1 MOSI, PC2 MISO, PC3 CS
+ *   mailbox  0x2017F000
+ */
+
+#include "rovari.h"
+#include "rovari_sdcard_spi.h"
+
+extern "C" {
+#include "tts_compat.h"
+#include "tts_frontend.h"
+#include "word_vocab.h"
+#include "pron_dict.h"
+#include "lpcvoc.h"
+#include "tts_mailbox.h"
+#include "tts_provision.h"
+}
+
+/* A wrong wake address bricks the part. Set it only from targets.py. */
+#if (Core_V5F_StartAddr != TTS_V5F_CODE_ADDR)
+#error "Core_V5F_StartAddr does not match the V5F image address in tts_provision.h"
+#endif
+
+#define TTS_STAGE_PROSODY   10u
+#define TTS_STAGE_ACOUSTIC  11u
+#define TTS_STAGE_VOCODER   12u
+#define TTS_STAGE_DONE      13u
+
+#define DIM                 LPCVOC_FEATURES
+#define MAX_FRAMES          TTS_MAX_FRAMES
+#define DICT_INDEX_BYTES    (88u * 1024u)
+#define DICT_BUCKET_BYTES   1024u
+#define DAC_MID             2048u
+
+#define TTS_DICT_PATH       "0:/PRONDICT.BIN"
+
+/* Sized for MAX_FRAMES. prosody_scratch_bytes(250) is 195040. */
+#define PROSODY_ARENA_BYTES (191u * 1024u)
+
+static TtsFrontendResult fe;
+
+static uint8_t  prosody_arena[PROSODY_ARENA_BYTES] __attribute__((aligned(8)));
+static uint8_t  dict_index[DICT_INDEX_BYTES] __attribute__((aligned(4)));
+static uint8_t  dict_bucket[DICT_BUCKET_BYTES];
+
+static float    feat[MAX_FRAMES * DIM] __attribute__((aligned(8)));
+static int16_t  pcm[MAX_FRAMES * LPCVOC_FRAME] __attribute__((aligned(4)));
+static uint16_t word_ids[MAX_FRAMES];
+
+static const int16_t    *g_pcm;
+static volatile uint32_t g_pcm_i;
+static volatile uint32_t g_pcm_n;
+
+static FIL      dict_fil;
+static bool     g_ready = false;
+static uint32_t g_job   = 0;
+
+/* Per stage timings, filled in by v5f_command while it waits. */
+static uint32_t g_ms_prosody;
+static uint32_t g_ms_acoustic;
+static uint32_t g_ms_vocoder;
+static uint32_t g_ms_total;
+
+static void dac_tick(void)
+{
+    uint32_t i = g_pcm_i;
+
+    if (i < g_pcm_n) {
+        /* Lift by 8, fold past the knee to an eighth slope. The tone test clips. */
+        int32_t v = (int32_t)g_pcm[i] * 8;
+
+        if (v > 6000)       v =  6000 + ((v - 6000) >> 3);
+        else if (v < -6000) v = -6000 + ((v + 6000) >> 3);
+
+        if (v >  32767) v =  32767;
+        if (v < -32768) v = -32768;
+
+        dac_write(PA4, (uint16_t)((v + 32768) >> 4));
+        g_pcm_i = i + 1u;
+    } else {
+        dac_write(PA4, DAC_MID);
+    }
+}
+
+static int dict_read(void *ctx, uint32_t off, void *dst, uint32_t len)
+{
+    UINT br;
+
+    (void)ctx;
+
+    if (f_lseek(&dict_fil, off) != FR_OK) {
+        return -1;
+    }
+    if (f_read(&dict_fil, dst, len, &br) != FR_OK) {
+        return -1;
+    }
+    if (br < len) {
+        memset((uint8_t *)dst + br, 0, len - br);
+    }
+    return 0;
+}
+
+static const char *mb_strerror(uint32_t s)
+{
+    switch (s) {
+    case TTS_OK:           return "ok";
+    case TTS_ERR_FRAMES:   return "frame count out of range";
+    case TTS_ERR_ARENA:    return "arena too small";
+    case TTS_ERR_ACOUSTIC: return "acoustic failed";
+    case TTS_ERR_PROSODY:  return "prosody failed";
+    case TTS_ERR_WEIGHTS:  return "weights rejected";
+    default:               return "unknown";
+    }
+}
+
+/* Send a command, wait for the job id. Returns the status, or 0xFFFFFFFF. */
+static uint32_t v5f_command(uint32_t cmd, uint32_t timeout_ms)
+{
+    uint32_t job = ++g_job;
+    uint32_t t0;
+
+    MB_JOB = job;
+    FENCE();
+    MB_CMD = cmd;
+    FENCE();
+
+    /* The V5F has no clock, so time its stage transitions from here. */
+    g_ms_prosody = g_ms_acoustic = g_ms_vocoder = g_ms_total = 0;
+
+    t0 = millis();
+    {
+        uint32_t last_stage = 0xFFFFFFFFu;
+        uint32_t t_mark     = t0;
+
+        while (MB_DONE != job) {
+            uint32_t st = MB_STAGE;
+
+            if (st != last_stage) {
+                uint32_t now = millis();
+
+                switch (last_stage) {
+                case TTS_STAGE_PROSODY:  g_ms_prosody  = now - t_mark; break;
+                case TTS_STAGE_ACOUSTIC: g_ms_acoustic = now - t_mark; break;
+                case TTS_STAGE_VOCODER:  g_ms_vocoder  = now - t_mark; break;
+                default: break;
+                }
+                last_stage = st;
+                t_mark     = now;
+            }
+
+            if ((millis() - t0) > timeout_ms) {
+                serial.printf("V5F timeout, CSTAR1=0x%08X stage=%lu\r\n",
+                              (unsigned int)NVIC->CSTAR[1],
+                              (unsigned long)MB_STAGE);
+                return 0xFFFFFFFFu;
+            }
+        }
+    }
+    FENCE();
+
+    g_ms_total = millis() - t0;
+
+    return MB_STATUS;
+}
+
+static void play_pcm(uint32_t samples)
+{
+    uint32_t deadline;
+
+    g_pcm   = pcm;
+    g_pcm_n = samples;
+    g_pcm_i = 0;
+
+    timer_start(TIMER1, LPCVOC_SAMPLE_RATE, dac_tick);
+
+    deadline = millis() + (samples / (LPCVOC_SAMPLE_RATE / 1000u)) + 500u;
+
+    while (g_pcm_i < g_pcm_n) {
+        if ((int32_t)(millis() - deadline) > 0) {
+            timer_stop(TIMER1);
+            dac_write(PA4, DAC_MID);
+            serial.printf("dac stalled at sample %lu of %lu\r\n",
+                          (unsigned long)g_pcm_i, (unsigned long)g_pcm_n);
+            return;
+        }
+    }
+
+    timer_stop(TIMER1);
+    dac_write(PA4, DAC_MID);
+}
+
+/* 16 kHz mono WAV to the card. OUT000.WAV upward, counter restarts each boot. */
+static void write_wav(const int16_t *pcm_in, uint32_t samples)
+{
+    static uint32_t seq = 0;
+    static char path[] = "0:/OUT000.WAV";
+    uint8_t  h[44];
+    uint32_t dsz = samples * 2u;
+    uint32_t rate = LPCVOC_SAMPLE_RATE;
+    uint32_t brate = rate * 2u;
+    FIL      f;
+    UINT     bw;
+
+    memset(h, 0, sizeof h);
+    memcpy(h + 0,  "RIFF", 4);
+    memcpy(h + 8,  "WAVEfmt ", 8);
+    memcpy(h + 36, "data", 4);
+
+    h[4]  = (uint8_t)((dsz + 36) >> 0);  h[5]  = (uint8_t)((dsz + 36) >> 8);
+    h[6]  = (uint8_t)((dsz + 36) >> 16); h[7]  = (uint8_t)((dsz + 36) >> 24);
+    h[16] = 16;                                  /* fmt chunk size */
+    h[20] = 1;                                   /* PCM            */
+    h[22] = 1;                                   /* mono           */
+    h[24] = (uint8_t)(rate >> 0);  h[25] = (uint8_t)(rate >> 8);
+    h[26] = (uint8_t)(rate >> 16); h[27] = (uint8_t)(rate >> 24);
+    h[28] = (uint8_t)(brate >> 0);  h[29] = (uint8_t)(brate >> 8);
+    h[30] = (uint8_t)(brate >> 16); h[31] = (uint8_t)(brate >> 24);
+    h[32] = 2;                                   /* block align    */
+    h[34] = 16;                                  /* bits           */
+    h[40] = (uint8_t)(dsz >> 0);  h[41] = (uint8_t)(dsz >> 8);
+    h[42] = (uint8_t)(dsz >> 16); h[43] = (uint8_t)(dsz >> 24);
+
+    path[6] = (char)('0' + (seq / 100u) % 10u);
+    path[7] = (char)('0' + (seq / 10u) % 10u);
+    path[8] = (char)('0' + seq % 10u);
+
+    if (f_open(&f, path, FA_WRITE | FA_CREATE_ALWAYS) != FR_OK) {
+        serial.printf("wav open failed\r\n");
+        return;
+    }
+    if (f_write(&f, h, 44, &bw) != FR_OK || bw != 44) {
+        serial.printf("wav header write failed\r\n");
+        f_close(&f);
+        return;
+    }
+    if (f_write(&f, pcm_in, dsz, &bw) != FR_OK || bw != dsz) {
+        serial.printf("wav data write failed at %lu of %lu\r\n",
+                      (unsigned long)bw, (unsigned long)dsz);
+        f_close(&f);
+        return;
+    }
+    f_close(&f);
+
+    serial.printf("wrote %s, %lu samples\r\n",
+                  path, (unsigned long)samples);
+    seq++;
+}
+
+static void speak(const char *text)
+{
+    uint32_t n, t0, status;
+
+    if (tts_frontend_process(text, &fe, 0) != 0) {
+        serial.printf("frontend failed\r\n");
+        return;
+    }
+
+    n = (uint32_t)fe.frame_count;
+    if (n == 0) {
+        serial.printf("nothing to say\r\n");
+        return;
+    }
+    if (n > MAX_FRAMES) {
+        serial.printf("truncated %lu frames to %lu\r\n",
+                      (unsigned long)n, (unsigned long)MAX_FRAMES);
+        n = MAX_FRAMES;
+    }
+
+    word_vocab_assign_frames_indexed(text, fe.frame_word, n, word_ids);
+
+    MB_FRAMES        = n;
+    MB_PHONES        = (uint32_t)fe.frame_phones;
+    MB_STRESS        = (uint32_t)fe.frame_stress;
+    MB_WORDIDS       = (uint32_t)word_ids;
+    MB_PROSODY_ARENA = (uint32_t)prosody_arena;
+    MB_PROSODY_BYTES = sizeof prosody_arena;
+    MB_FEAT          = (uint32_t)feat;
+    MB_PCM           = (uint32_t)pcm;
+    FENCE();
+
+    serial.printf("%lu frames, %lu ms of audio, V5F...\r\n",
+                  (unsigned long)n, (unsigned long)(n * 10u));
+
+    status = v5f_command(TTS_CMD_SYNTH, 120000u);
+    if (status != TTS_OK) {
+        serial.printf("synth failed: %s\r\n", mb_strerror(status));
+        return;
+    }
+
+    {
+        uint32_t audio_ms = n * 10u;
+
+        serial.printf("prosody  %6lu ms  %5lu ms/s\r\n",
+                      (unsigned long)g_ms_prosody,
+                      (unsigned long)(g_ms_prosody * 1000u / audio_ms));
+        serial.printf("acoustic %6lu ms  %5lu ms/s\r\n",
+                      (unsigned long)g_ms_acoustic,
+                      (unsigned long)(g_ms_acoustic * 1000u / audio_ms));
+        serial.printf("vocoder  %6lu ms  %5lu ms/s\r\n",
+                      (unsigned long)g_ms_vocoder,
+                      (unsigned long)(g_ms_vocoder * 1000u / audio_ms));
+        serial.printf("total    %6lu ms  %5lu ms/s  %lu.%02lux real time\r\n",
+                      (unsigned long)g_ms_total,
+                      (unsigned long)(g_ms_total * 1000u / audio_ms),
+                      (unsigned long)(g_ms_total / audio_ms),
+                      (unsigned long)((g_ms_total * 100u / audio_ms) % 100u));
+    }
+
+    write_wav(pcm, n * LPCVOC_FRAME);
+
+    t0 = millis();
+    play_pcm(n * LPCVOC_FRAME);
+    serial.printf("playback %lu ms\r\n", (unsigned long)(millis() - t0));
+}
+
+static bool bind_dictionary(void)
+{
+    int rc;
+
+    if (f_open(&dict_fil, TTS_DICT_PATH, FA_READ) != FR_OK) {
+        serial.printf("cannot open %s\r\n", TTS_DICT_PATH);
+        return false;
+    }
+
+    rc = pron_dict_init_stream(dict_read, 0,
+                               dict_index, sizeof dict_index,
+                               dict_bucket, sizeof dict_bucket);
+    if (rc != 0) {
+        serial.printf("dictionary init %d, index ram %lu\r\n",
+                      rc, (unsigned long)sizeof dict_index);
+        return false;
+    }
+
+    serial.printf("dictionary %lu entries\r\n",
+                  (unsigned long)pron_dict_entries());
+    return true;
+}
+
+static bool wait_for_v5f(uint32_t timeout_ms)
+{
+    uint32_t t0 = millis();
+
+    while (MB_READY != TTS_READY_MAGIC) {
+        if ((millis() - t0) > timeout_ms) {
+            uint32_t cs = NVIC->CSTAR[1];
+            serial.printf("V5F not ready, CSTAR1=0x%08X state=%u\r\n",
+                          (unsigned int)cs, (unsigned int)((cs >> 14) & 3u));
+            return false;
+        }
+    }
+    FENCE();
+    return true;
+}
+
+/* 200 Hz square through the same DAC path. Silent means the DAC path. */
+static void tone_test(uint32_t ms)
+{
+    uint32_t total = (LPCVOC_SAMPLE_RATE / 1000u) * ms;
+    uint32_t i;
+
+    if (total > MAX_FRAMES * LPCVOC_FRAME) {
+        total = MAX_FRAMES * LPCVOC_FRAME;
+    }
+    for (i = 0; i < total; i++) {
+        pcm[i] = ((i / 40u) & 1u) ? 8000 : -8000;
+    }
+    play_pcm(total);
+}
+
+void app_init(void)
+{
+    tts_prov_status_t st;
+    uint32_t status;
+
+    serial.begin(115200);
+    serial.printf("\r\nH417_TTS_DEMO dual core\r\n");
+
+    /* Link_v5f.ld, targets.py and ch32h417_conf.h must agree. The header wins. */
+    serial.printf("V5F start 0x%08X, image at 0x%08X\r\n",
+                  (unsigned int)Core_V5F_StartAddr,
+                  (unsigned int)TTS_V5F_CODE_ADDR);
+    serial.printf("CSTAR1=0x%08X ready=0x%08X\r\n",
+                  (unsigned int)NVIC->CSTAR[1],
+                  (unsigned int)MB_READY);
+
+    /* Flash first. The V5F cannot bind weights that are not there. */
+    st = tts_provision_ensure();
+    if (st != TTS_PROV_OK && st != TTS_PROV_ALREADY) {
+        serial.printf("provision failed: %s\r\n", tts_provision_strerror(st));
+        return;
+    }
+
+    if (!sd_is_mounted()) {
+        uint8_t rc = sd_init();
+        if (rc != SD_OK) {
+            serial.printf("sd_init %u: %s\r\n", (unsigned int)rc,
+                          (rc == 1u) ? "card did not respond"
+                                     : "f_mount failed");
+            return;
+        }
+    }
+
+    if (word_vocab_init((const void *)TTS_VOCAB_ADDR, TTS_VOCAB_LEN) != 0) {
+        serial.printf("word vocab rejected\r\n");
+        return;
+    }
+
+    if (!bind_dictionary()) return;
+
+    if (!wait_for_v5f(2000u)) return;
+    serial.printf("V5F up\r\n");
+
+    status = v5f_command(TTS_CMD_INIT, 5000u);
+    if (status != TTS_OK) {
+        serial.printf("V5F init failed at stage %lu: %s\r\n",
+                      (unsigned long)MB_STAGE, mb_strerror(status));
+        return;
+    }
+
+    dac_init(PA4);
+    dac_write(PA4, DAC_MID);
+
+    serial.printf("tone test\r\n");
+    tone_test(500);
+
+    g_ready = true;
+    serial.printf("ready, type a line and press enter\r\n");
+
+    /* Keep identical between the AS2_QUALITY and AS2_FAST builds. */
+    speak("THE TEMPERATURE IS THIRTY SEVEN DEGREES");
+    speak("ALL SYSTEMS NOMINAL");
+    speak("THE MOTOR IS RUNNING NORMALLY");
+    speak("SHE SELLS SEA SHELLS");
+    speak("SIX THIRTY SIX");
+}
+
+void app_run(void)
+{
+    static char line[192];
+
+    if (!g_ready) {
+        delay(1000);
+        return;
+    }
+
+    if (serial.available()) {
+        int n = serial.readLine(line, sizeof line);
+        if (n > 0) {
+            speak(line);
+        }
+    }
+
+    delay(5);
+}

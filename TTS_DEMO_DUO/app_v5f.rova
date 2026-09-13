@@ -1,0 +1,250 @@
+/*
+ * Copyright (c) 2026 Armstrong Subero
+ *
+ * Program:  H417_TTS_DEMO (dual core)
+ * Platform: CH32H417 / Rovari SDK
+ * Core:     V5F, 400 MHz, hard float
+ *
+ * Prosody model, acoustic model, LPC vocoder. No peripheral but the
+ * mailbox. The weights are not linked: the V3F provisions them into
+ * flash and they are read in place from tts_provision.h.
+ *
+ * Memory:
+ *   ITCM 128K at 0x200A0000   code
+ *   DTCM 256K at 0x200C0000   acoustic arena and window buffers
+ *   flash  64K at 0x0001A000  this image only
+ */
+
+#include "rovari.h"
+
+/* objects_v5f.rsp holds only this file, so the V5F carries its own copy. */
+extern "C" {
+#include "tts_compat.h"
+#include "prosody_model.h"
+#include "acoustic_stage2.h"
+#include "lpcvoc.h"
+#include "tts_mailbox.h"
+#include "tts_provision.h"
+
+#include "../src/prosody_model_int8.c"
+#include "../src/acoustic_stage2.c"
+#include "../src/lpcvoc.c"
+#include "../src/tts_stdlib.c"
+}
+
+#define DIM 20
+
+/* Stage markers, timestamped by the V3F while it waits. */
+#define TTS_STAGE_PROSODY   10u
+#define TTS_STAGE_ACOUSTIC  11u
+#define TTS_STAGE_VOCODER   12u
+#define TTS_STAGE_DONE      13u
+
+#define SPEAKER_PITCH_MEAN 0.2120f
+#define SPEAKER_PITCH_STD  0.3615f
+
+static ProsodyModel   pm;
+static AcousticStage2 am;
+static LpcVocState    voc;
+
+/* Window is AS2_CHUNK + 2 * AS2_PAD frames, 148 at the defaults. */
+#define WIN_MAX 176u
+
+/* 229376 bytes against the 228516 chunk_scratch_bytes() needs. */
+static uint8_t acoustic_arena[224 * 1024] __attribute__((aligned(8)));
+static uint8_t win_ph[WIN_MAX], win_st[WIN_MAX];
+static float   win_en[WIN_MAX], win_pi[WIN_MAX], win_vo[WIN_MAX];
+static float   win_out[WIN_MAX * DIM] __attribute__((aligned(8)));
+
+/* Over the whole utterance. Per chunk it flattens the sentence contour. */
+static void correct_pitch(float *f, uint32_t n)
+{
+    float sum = 0.0f, sq = 0.0f, mean, sd;
+    uint32_t i;
+
+    for (i = 0; i < n; i++) {
+        float p = f[i * DIM + 18];
+        sum += p;
+        sq += p * p;
+    }
+    mean = sum / (float)n;
+    sd = sq / (float)n - mean * mean;
+    sd = (sd > 1e-10f) ? tts_sqrtf(sd) : 1e-5f;
+
+    for (i = 0; i < n; i++) {
+        float *p = &f[i * DIM + 18];
+        float z = (*p - mean) / sd;
+        if (z > 2.5f) z = 2.5f;
+        if (z < -2.5f) z = -2.5f;
+        *p = z * SPEAKER_PITCH_STD + SPEAKER_PITCH_MEAN;
+    }
+}
+
+static uint32_t synth(void)
+{
+    uint32_t n = MB_FRAMES, t;
+    const uint8_t  *ph  = (const uint8_t  *)MB_PHONES;
+    const uint8_t  *st  = (const uint8_t  *)MB_STRESS;
+    const uint16_t *wid = (const uint16_t *)MB_WORDIDS;
+    float   *feat = (float   *)MB_FEAT;
+    int16_t *pcm  = (int16_t *)MB_PCM;
+
+    static float en[TTS_MAX_FRAMES], pi[TTS_MAX_FRAMES], vo[TTS_MAX_FRAMES];
+
+    if (n == 0 || n > TTS_MAX_FRAMES) return TTS_ERR_FRAMES;
+    if (prosody_scratch_bytes(n) > MB_PROSODY_BYTES) return TTS_ERR_ARENA;
+
+    /* No usable clock here, so the V3F timestamps these. */
+    MB_STAGE = TTS_STAGE_PROSODY;
+    FENCE();
+
+    /* Stage the prosody weights into the idle acoustic arena, flash on failure. */
+    {
+        const void *w = (const void *)TTS_PROSODY_ADDR;
+
+        if (sizeof acoustic_arena >= TTS_PROSODY_LEN) {
+            memcpy(acoustic_arena, w, TTS_PROSODY_LEN);
+            w = acoustic_arena;
+        }
+        if (prosody_load_mem(&pm, w, TTS_PROSODY_LEN) != 0)
+            return TTS_ERR_WEIGHTS;
+        pm.temperature = 0.0f;   /* load_mem clears the struct */
+    }
+
+    prosody_set_scratch((void *)MB_PROSODY_ARENA, MB_PROSODY_BYTES);
+    if (prosody_generate(&pm, ph, st, wid, n, en, pi, vo) != 0)
+        return TTS_ERR_PROSODY;
+
+    MB_STAGE = TTS_STAGE_ACOUSTIC;
+    FENCE();
+
+    /* Reuse the prosody arena for staging: 59 MB of flash becomes 391 KB of RAM. */
+    acoustic_stage2_set_stage_buf((void *)MB_PROSODY_ARENA, MB_PROSODY_BYTES);
+
+    acoustic_stage2_set_scratch(acoustic_arena, sizeof acoustic_arena);
+    if (acoustic_stage2_generate_chunked(&am, ph, st, en, pi, vo, n, feat,
+                                         win_ph, win_st, win_en, win_pi,
+                                         win_vo, win_out) != 0)
+        return TTS_ERR_ACOUSTIC;
+
+    for (t = 0; t < n; t++) {
+        feat[t * DIM + 0]  = en[t];
+        feat[t * DIM + 18] = pi[t];
+        feat[t * DIM + 19] = vo[t];
+    }
+    correct_pitch(feat, n);
+
+    MB_STAGE = TTS_STAGE_VOCODER;
+    FENCE();
+
+    lpcvoc_init(&voc);
+    for (t = 0; t < n; t++)
+        lpcvoc_frame(&voc, feat + (uint32_t)t * DIM, pcm + (uint32_t)t * LPCVOC_FRAME);
+
+    MB_STAGE = TTS_STAGE_DONE;
+    FENCE();
+
+    return TTS_OK;
+}
+
+/*
+ * app_init only answers the mailbox, everything real happens in
+ * app_run. MB_STAGE: 1 in app_run, 2 acoustic bound, 3 prosody bound,
+ * 4 arena checked.
+ */
+void app_init(void)
+{
+    MB_STAGE  = 0;
+    MB_STATUS = TTS_OK;
+    MB_CMD    = TTS_CMD_IDLE;
+    MB_DONE   = 0;
+    FENCE();
+
+    MB_READY = TTS_READY_MAGIC;
+    FENCE();
+}
+
+/* Bind the weights straight out of provisioned flash. Called from
+   app_run on the first command, never from app_init. */
+static uint32_t bind_models(void)
+{
+    if (acoustic_stage2_load_mem(&am, (const void *)TTS_ACOUSTIC_ADDR,
+                                 TTS_ACOUSTIC_LEN) != 0) {
+        return TTS_ERR_WEIGHTS;
+    }
+    MB_STAGE = 2;
+    FENCE();
+
+    /* Validity check only. synth() reloads from the staged RAM copy on
+       every utterance, so this binding is not the one that runs. */
+    if (prosody_load_mem(&pm, (const void *)TTS_PROSODY_ADDR,
+                         TTS_PROSODY_LEN) != 0) {
+        return TTS_ERR_WEIGHTS;
+    }
+    pm.temperature = 0.0f;
+    MB_STAGE = 3;
+    FENCE();
+
+    if (acoustic_stage2_window_frames() > WIN_MAX
+        || acoustic_stage2_chunk_scratch_bytes() > sizeof acoustic_arena) {
+        return TTS_ERR_ARENA;
+    }
+    MB_STAGE = 4;
+    FENCE();
+
+    return TTS_OK;
+}
+
+/* Polling flat out saturates the SRAM arbiter and starves the V3F. */
+void app_run(void)
+{
+    static int bound = 0;
+
+    if (MB_CMD == TTS_CMD_IDLE) {
+        Delay_Us(100);
+        return;
+    }
+
+    if (MB_CMD == TTS_CMD_INIT) {
+        uint32_t job = MB_JOB;
+        uint32_t status;
+
+        MB_CMD = TTS_CMD_IDLE;
+        MB_STAGE = 1;
+        FENCE();
+
+        status = bind_models();
+        if (status == TTS_OK) bound = 1;
+
+        MB_STATUS = status;
+        FENCE();
+        MB_DONE = job;
+        FENCE();
+        return;
+    }
+
+    if (MB_CMD == TTS_CMD_SYNTH) {
+        uint32_t job = MB_JOB;
+        uint32_t t0, t1, status;
+
+        MB_CMD = TTS_CMD_IDLE;
+        FENCE();
+
+        if (!bound) {
+            MB_STATUS = TTS_ERR_WEIGHTS;
+            FENCE();
+            MB_DONE = job;
+            FENCE();
+            return;
+        }
+
+        (void)t0; (void)t1;
+        status = synth();
+
+        MB_MS     = 0;   /* no clock on this core, the V3F times it */
+        MB_STATUS = status;
+        FENCE();
+        MB_DONE   = job;
+        FENCE();
+    }
+}
