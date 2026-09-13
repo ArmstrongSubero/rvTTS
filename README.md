@@ -82,7 +82,7 @@ Swapping the float accumulator for int32 is worth a factor of 32 on a core with 
 
 ## Limits
 
-One part, one configuration, no FARGAN build on hardware. SCOREQ over three sentences and DNSMOS over five, enough to order configurations that differ widely and nothing finer. Instruction counts overpredicted two of the five hardware wins by factors of 7 and 1.1, since they cannot see a weight fetch. Text normalisation is unrepaired and the system is single speaker.
+This is one part, with one configuration, and no FARGAN build on hardware. SCOREQ over three sentences and DNSMOS over five, enough to order configurations that differ widely and nothing finer. Instruction counts overpredicted two of the five hardware wins by factors of 7 and 1.1, since they cannot see a weight fetch. Text normalisation is unrepaired and the system is single speaker.
 
 ## Licence
 
